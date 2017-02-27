@@ -6,19 +6,18 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-
-public class MainActivity extends AppCompatActivity {
+public class PerfilActivity extends AppCompatActivity {
 
     Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_perfil);
     }
 
-    @Override
+
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
+        getMenuInflater().inflate(R.menu.menuperfil, menu);
         return true;
     }
 
@@ -29,14 +28,14 @@ public class MainActivity extends AppCompatActivity {
 
         switch (id){
 
-            case R.id.mPerfil:
-                intent= new Intent(MainActivity.this, PerfilActivity.class);
-               startActivity(intent);
-               finish();
-            break;
+            case R.id.mPrincipal:
+                intent= new Intent(PerfilActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+                break;
 
             case R.id.mLogOut:
-                intent= new Intent(MainActivity.this, LoginActivity.class);
+                intent= new Intent(PerfilActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
                 break;
@@ -46,4 +45,5 @@ public class MainActivity extends AppCompatActivity {
         return true;
 
     }
+
 }

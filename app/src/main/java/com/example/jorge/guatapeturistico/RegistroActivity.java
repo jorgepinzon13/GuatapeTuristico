@@ -27,7 +27,7 @@ public class RegistroActivity extends AppCompatActivity {
         bCan=(Button) findViewById(R.id.bCan);
 
         Bundle extras= getIntent().getExtras();
-        Toast.makeText(this.)
+
 
         bCan.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -9,4 +9,7 @@
     <string name="repassword">Repetir Password</string>
     <string name="email">Email</string>
     <string name="Cancelar">Cancelar</string>
+    <string name="miPerfil">Mi Perfil</string>
+    <string name="cerrarSesion">Cerrar Sesión</string>
+    <string name="Principal">Principal</string>
 </resources>

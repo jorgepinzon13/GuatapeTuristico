@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -26,6 +27,20 @@ public class LoginActivity extends AppCompatActivity {
         bInicio=(Button) findViewById(R.id.bInicio);
         tReg=(TextView) findViewById(R.id.tReg);
 
+        Bundle extras = getIntent().getExtras();
+
+
+
+        bInicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent= new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         tReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,5 +52,21 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode==1234 && resultCode==RESULT_OK){
+
+            username = data.getExtras().getString("username");
+            password = data.getExtras().getString("password");
+
+        }
+
+        if (requestCode==1234 && resultCode== RESULT_CANCELED){
+
+            Toast.makeText(this,"Error en login",Toast.LENGTH_SHORT).show();
+        }
     }
 }
