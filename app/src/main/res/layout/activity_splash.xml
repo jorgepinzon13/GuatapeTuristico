@@ -12,30 +12,28 @@
     android:orientation="vertical"
     android:background="@color/khaki">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:src="@drawable/guatape"
-        />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="@string/Guatapé"
-        android:textColor="@color/brown"
-        android:textStyle="bold"
-        android:textSize="40dp"
-        android:layout_gravity="center"
-        android:gravity="center"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/guatape3" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:src="@drawable/guatape2"
-        android:layout_gravity="center"
-        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:text="@string/Guatapé"
+            android:textColor="@color/brown"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+
+
+
 
 </LinearLayout>

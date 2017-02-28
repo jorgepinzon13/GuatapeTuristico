@@ -12,4 +12,50 @@
     android:orientation="vertical"
     android:background="@color/khaki">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/perfil"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/Layouth">
+
+            <TextView style="@style/TextViewstyle"
+                android:text="@string/username"></TextView>
+
+            <EditText style="@style/EditTextstyle"
+                android:id="@+id/eUsuario3"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layouth">
+
+            <TextView style="@style/TextViewstyle"
+                android:text="@string/password"></TextView>
+
+            <EditText style="@style/EditTextstyle"
+                android:id="@+id/ePassword3"></EditText>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layouth">
+
+            <TextView style="@style/TextViewstyle"
+                android:text="@string/email"></TextView>
+
+            <EditText style="@style/EditTextstyle"
+                android:id="@+id/eEmail3"></EditText>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
 </LinearLayout>

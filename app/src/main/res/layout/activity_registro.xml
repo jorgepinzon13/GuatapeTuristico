@@ -35,6 +35,7 @@
         android:layout_weight="1"
         android:hint="@string/username"
         android:gravity="center"
+        android:inputType="text"
         android:id="@+id/eUsuario2"/>
 
     <EditText
@@ -43,6 +44,7 @@
         android:layout_weight="1"
         android:hint="@string/password"
         android:gravity="center"
+        android:inputType="textPassword"
         android:id="@+id/ePassword2"/>
 
     <EditText
@@ -51,6 +53,7 @@
         android:layout_weight="1"
         android:hint="@string/repassword"
         android:gravity="center"
+        android:inputType="textPassword"
         android:id="@+id/eReppass"/>
 
     <EditText
