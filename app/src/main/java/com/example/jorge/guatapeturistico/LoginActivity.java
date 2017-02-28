@@ -3,6 +3,7 @@ package com.example.jorge.guatapeturistico;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText eUsuario,ePassword;
     Button bInicio;
     TextView tReg;
-    String username, password;
+    String username="", password="",email="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,17 +28,21 @@ public class LoginActivity extends AppCompatActivity {
         bInicio=(Button) findViewById(R.id.bInicio);
         tReg=(TextView) findViewById(R.id.tReg);
 
-        Bundle extras = getIntent().getExtras();
+//        Bundle extras = getIntent().getExtras();
 
 
 
         bInicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent= new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
-                finish();
+                if (eUsuario.getText().toString().equals(username) && ePassword.getText().toString().equals(password)) {
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    intent.putExtra("username", username);
+                    intent.putExtra("password",password);
+                    intent.putExtra("email",email);
+                    startActivity(intent);
+//                    finish();
+                }
             }
         });
 
@@ -45,8 +50,6 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(LoginActivity.this, RegistroActivity.class);
-                /*intent.putExtra("username",eUsuario.getText().toString());
-                intent.putExtra("password",ePassword.getText().toString());*/
                 startActivityForResult(intent,1234);
 
             }
@@ -61,6 +64,10 @@ public class LoginActivity extends AppCompatActivity {
 
             username = data.getExtras().getString("username");
             password = data.getExtras().getString("password");
+            email = data.getExtras().getString("email");
+            Log.d("username",data.getExtras().getString("username"));
+            Log.d("password",data.getExtras().getString("password"));
+            Log.d("email",data.getExtras().getString("correo"));
 
         }
 

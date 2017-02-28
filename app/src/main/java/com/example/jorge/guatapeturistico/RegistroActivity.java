@@ -14,6 +14,8 @@ public class RegistroActivity extends AppCompatActivity {
 
     EditText eUsuario2,ePassword2, eRepass,eEmail;
     Button bReg,bCan;
+    String usuario,password,correo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +27,6 @@ public class RegistroActivity extends AppCompatActivity {
         eEmail=(EditText)findViewById(R.id.eEmail);
         bReg=(Button) findViewById(R.id.bReg);
         bCan=(Button) findViewById(R.id.bCan);
-
-        Bundle extras= getIntent().getExtras();
-
 
         bCan.setOnClickListener(new View.OnClickListener() {
             @Override

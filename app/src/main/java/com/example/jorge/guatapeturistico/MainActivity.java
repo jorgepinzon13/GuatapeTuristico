@@ -9,11 +9,15 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
+    String username,email;
     Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Bundle extras = getIntent().getExtras();
+        username = extras.getString("username");
+        email = extras.getString("email");
     }
 
     @Override
@@ -31,8 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.mPerfil:
                 intent= new Intent(MainActivity.this, PerfilActivity.class);
-               startActivity(intent);
-               finish();
+                intent.putExtra("username",username);
+                intent.putExtra("email",email);
+                startActivity(intent);
+//               finish();
             break;
 
             case R.id.mLogOut:
