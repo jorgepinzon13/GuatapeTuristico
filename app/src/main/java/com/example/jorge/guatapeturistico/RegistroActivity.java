@@ -12,7 +12,7 @@ public class RegistroActivity extends AppCompatActivity {
 
 
 
-    EditText eUsuario2,ePassword2, eRepass,eEmail;
+    EditText eUsuario2,ePassword2, eReppass,eEmail;
     Button bReg,bCan;
     String usuario,password,correo;
 
@@ -23,7 +23,7 @@ public class RegistroActivity extends AppCompatActivity {
 
         eUsuario2=(EditText)findViewById(R.id.eUsuario2);
         ePassword2=(EditText)findViewById(R.id.ePassword2);
-        eRepass=(EditText)findViewById(R.id.eReppass);
+        eReppass=(EditText)findViewById(R.id.eReppass);
         eEmail=(EditText)findViewById(R.id.eEmail);
         bReg=(Button) findViewById(R.id.bReg);
         bCan=(Button) findViewById(R.id.bCan);
@@ -40,13 +40,31 @@ public class RegistroActivity extends AppCompatActivity {
         bReg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent();
-                intent.putExtra("username",eUsuario2.getText().toString());
-                intent.putExtra("password",ePassword2.getText().toString());
-                intent.putExtra("email",eEmail.getText().toString());
-                setResult(RESULT_OK,intent);
-                finish();
 
+                if (!eUsuario2.getText().toString().equals("") && !ePassword2.getText().toString().equals("") && !eReppass.getText().toString().equals("") && !eEmail.getText().toString().equals("")) {
+
+                    if (eReppass.getText().toString().equals(ePassword2.getText().toString())) {
+
+
+                        Intent intent = new Intent();
+                        intent.putExtra("username", eUsuario2.getText().toString());
+                        intent.putExtra("password", ePassword2.getText().toString());
+                        intent.putExtra("email", eEmail.getText().toString());
+                        setResult(RESULT_OK, intent);
+                        finish();
+
+                    }
+                    else {
+
+                        Toast.makeText(getApplicationContext(),"Contraseñas no coinciden",Toast.LENGTH_SHORT).show();
+
+                    }
+                }
+                else {
+
+                    Toast.makeText(getApplicationContext(),"Por favor complete todos los campos",Toast.LENGTH_SHORT).show();
+
+                }
             }
         });
 

@@ -35,15 +35,6 @@
 
         </LinearLayout>
 
-        <LinearLayout style="@style/Layouth">
-
-            <TextView style="@style/TextViewstyle"
-                android:text="@string/password"></TextView>
-
-            <EditText style="@style/EditTextstyle"
-                android:id="@+id/ePassword3"></EditText>
-
-        </LinearLayout>
 
         <LinearLayout style="@style/Layouth">
 

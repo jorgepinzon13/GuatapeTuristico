@@ -19,7 +19,7 @@
     <style name="TextViewstyle">
         <item name="android:textColor">@color/saddlebrown</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">30dp</item>
+        <item name="android:textSize">25dp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
@@ -29,7 +29,7 @@
     <style name="EditTextstyle">
         <item name="android:textColor">@color/sienna</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">25dp</item>
+        <item name="android:textSize">20dp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>

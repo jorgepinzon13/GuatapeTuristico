@@ -35,13 +35,29 @@ public class LoginActivity extends AppCompatActivity {
         bInicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (eUsuario.getText().toString().equals(username) && ePassword.getText().toString().equals(password)) {
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                    intent.putExtra("username", username);
-                    intent.putExtra("password",password);
-                    intent.putExtra("email",email);
-                    startActivity(intent);
-//                    finish();
+
+                if (!eUsuario.getText().toString().equals("") && !ePassword.getText().toString().equals("")) {
+
+                    if (eUsuario.getText().toString().equals(username) && ePassword.getText().toString().equals(password)) {
+
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        intent.putExtra("username", username);
+                        intent.putExtra("password", password);
+                        intent.putExtra("email", email);
+
+                        startActivity(intent);
+                        //                    finish();
+                    } else {
+
+                        Toast.makeText(getApplicationContext(), "Usuario o Contraseña incorrecta", Toast.LENGTH_SHORT).show();
+
+                    }
+                }
+
+                else {
+
+                    Toast.makeText(getApplicationContext(), "Por favor complete todos los campos", Toast.LENGTH_SHORT).show();
+
                 }
             }
         });
@@ -67,13 +83,13 @@ public class LoginActivity extends AppCompatActivity {
             email = data.getExtras().getString("email");
             Log.d("username",data.getExtras().getString("username"));
             Log.d("password",data.getExtras().getString("password"));
-            Log.d("email",data.getExtras().getString("correo"));
+            Log.d("email",data.getExtras().getString("email"));
 
         }
 
         if (requestCode==1234 && resultCode== RESULT_CANCELED){
 
-            Toast.makeText(this,"Error en login",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Error en Registro",Toast.LENGTH_SHORT).show();
         }
     }
 }
