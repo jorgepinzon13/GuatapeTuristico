@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GuatapeTuristico</string>
+    <string name="Guatapé">Guatapé</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="IniciarSesión">Login</string>
+    <string name="Registrarse">Register</string>
+    <string name="Registro">Registro</string>
+    <string name="repassword">Repite Password</string>
+    <string name="email">Email</string>
+    <string name="Cancelar">Cancel</string>
+    <string name="miPerfil">My Profile</string>
+    <string name="cerrarSesion">Log out</string>
+    <string name="Principal">Main</string>
+    <string name="Pueblo">Guatapé...Pueblo de zócalos y colores</string>
+
+</resources>
