@@ -1,5 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jorge.guatapeturistico.BarActivity">
+
+    <item
+        android:id="@+id/mPerfil"
+        android:title="@string/miPerfil"
+        />
 
     <item
         android:id="@+id/mPrincipal"
@@ -11,10 +18,6 @@
         android:title="@string/Hoteles"
         />
 
-    <item
-        android:id="@+id/mBares"
-        android:title="@string/Bares"
-        />
 
     <item
         android:id="@+id/mInteres"

@@ -12,7 +12,7 @@ public class PerfilActivity extends AppCompatActivity {
 
     EditText eUsuario3,eEmail3;
     Intent intent;
-    String username="",email="";
+    String username,email;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +43,30 @@ public class PerfilActivity extends AppCompatActivity {
                 intent= new Intent(PerfilActivity.this, MainActivity.class);
                 intent.putExtra("username", username);
                 intent.putExtra("email", email);
+                startActivity(intent);
+                finish();
+                break;
+
+            case R.id.mHotel:
+                intent= new Intent(PerfilActivity.this, HotelActivity.class);
+                intent.putExtra("username",username);
+                intent.putExtra("email",email);
+                startActivity(intent);
+                finish();
+                break;
+
+            case R.id.mBares:
+                intent= new Intent(PerfilActivity.this, BarActivity.class);
+                intent.putExtra("username",username);
+                intent.putExtra("email",email);
+                startActivity(intent);
+                finish();
+                break;
+
+            case R.id.mInteres:
+                intent= new Intent(PerfilActivity.this, InteresActivity.class);
+                intent.putExtra("username",username);
+                intent.putExtra("email",email);
                 startActivity(intent);
                 finish();
                 break;

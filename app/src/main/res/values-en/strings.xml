@@ -16,4 +16,26 @@
     <string name="Principal">Main</string>
     <string name="Pueblo">Guatapé...Pueblo de zócalos y colores</string>
 
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_hotel">HotelActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_bar">BarActivity</string>
+    <string name="title_activity_interes">InteresActivity</string>
+    <string name="Hoteles">Hotels</string>
+    <string name="Bares">Bars</string>
+    <string name="Interes">Places of Interest</string>
+    <string name="Hotel1">Los Recuerdos Hotel </string>
+    <string name="Hotel2">El Encuentro Hotel </string>
+    <string name="Hotel3">Pietra Santa Hotel </string>
+    <string name="Bar1">El Muelle Resto-Bar</string>
+    <string name="Bar2">Balcón de la Avenida</string>
+    <string name="Bar3">Bar Baroja</string>
+    <string name="Interes1">La Piedra del Peñol</string>
+    <string name="Interes2">Plazoleta de Zócalos</string>
+    <string name="Interes3">Represa</string>
+    <string name="Sitio1">Place of Interest 1</string>
+    <string name="Sitio2">Place of Interest 2</string>
+    <string name="Sitio3">Place of Interest 3</string>
+
 </resources>

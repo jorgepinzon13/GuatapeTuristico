@@ -19,4 +19,21 @@
     <string name="title_activity_hotel">HotelActivity</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_bar">BarActivity</string>
+    <string name="title_activity_interes">InteresActivity</string>
+    <string name="Hoteles">Hoteles</string>
+    <string name="Bares">Bares</string>
+    <string name="Interes">Sitios de Interés</string>
+    <string name="Hotel1">Hotel Los Recuerdos</string>
+    <string name="Hotel2">Hotel El Encuentro</string>
+    <string name="Hotel3">Hotel Pietra Santa</string>
+    <string name="Bar1">El Muelle Resto-Bar</string>
+    <string name="Bar2">Balcón de la Avenida</string>
+    <string name="Bar3">Bar Baroja</string>
+    <string name="Interes1">La Piedra del Peñol</string>
+    <string name="Interes2">Plazoleta de Zócalos</string>
+    <string name="Interes3">Represa</string>
+    <string name="Sitio1">Sitio de Interés 1</string>
+    <string name="Sitio2">Sitio de Interés 2</string>
+    <string name="Sitio3">Sitio de Interés 3</string>
 </resources>

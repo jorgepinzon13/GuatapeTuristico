@@ -2,9 +2,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.jorge.guatapeturistico.HotelActivity">
+
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/mPerfil"
+        android:title="@string/miPerfil"
+        />
+
+    <item
+        android:id="@+id/mPrincipal"
+        android:title="@string/Principal"
+        />
+
+    <item
+        android:id="@+id/mBares"
+        android:title="@string/Bares"
+        />
+
+
+    <item
+        android:id="@+id/mInteres"
+        android:title="@string/Interes"
+        />
+
+    <item
+        android:id="@+id/mLogOut"
+        android:title="@string/cerrarSesion"
+        />
 </menu>

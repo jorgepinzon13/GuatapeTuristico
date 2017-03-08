@@ -38,11 +38,38 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("username",username);
                 intent.putExtra("email",email);
                 startActivity(intent);
-//               finish();
-            break;
+                finish();
+                break;
+
+            case R.id.mHotel:
+                intent= new Intent(MainActivity.this, HotelActivity.class);
+                intent.putExtra("username",username);
+                intent.putExtra("email",email);
+                startActivity(intent);
+                finish();
+                break;
+
+            case R.id.mBares:
+                intent= new Intent(MainActivity.this, BarActivity.class);
+                intent.putExtra("username",username);
+                intent.putExtra("email",email);
+                startActivity(intent);
+                finish();
+                break;
+
+            case R.id.mInteres:
+                intent= new Intent(MainActivity.this, InteresActivity.class);
+                intent.putExtra("username",username);
+                intent.putExtra("email",email);
+                startActivity(intent);
+                finish();
+                break;
+
 
             case R.id.mLogOut:
                 intent= new Intent(MainActivity.this, LoginActivity.class);
+                intent.putExtra("username",username);
+                intent.putExtra("email",email);
                 startActivity(intent);
                 finish();
                 break;
