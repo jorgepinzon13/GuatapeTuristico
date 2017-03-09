@@ -49,14 +49,14 @@ public class LoginActivity extends AppCompatActivity {
                         //                    finish();
                     } else {
 
-                        Toast.makeText(getApplicationContext(), "Usuario o Contraseña incorrecta", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), getResources().getString(R.string.ToastUser), Toast.LENGTH_SHORT).show();
 
                     }
                 }
 
                 else {
 
-                    Toast.makeText(getApplicationContext(), "Por favor complete todos los campos", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.ToastCampos), Toast.LENGTH_SHORT).show();
 
                 }
             }
@@ -89,7 +89,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if (requestCode==1234 && resultCode== RESULT_CANCELED){
 
-            Toast.makeText(this,"Error en Registro",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getResources().getString(R.string.ToastErrorReg),Toast.LENGTH_SHORT).show();
         }
     }
 }

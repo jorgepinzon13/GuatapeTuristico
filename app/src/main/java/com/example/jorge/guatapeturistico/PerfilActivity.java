@@ -24,6 +24,10 @@ public class PerfilActivity extends AppCompatActivity {
         Bundle extras= getIntent().getExtras();
         eUsuario3.setText(extras.getString("username"));
         eEmail3.setText(extras.getString("email"));
+
+        username= extras.getString("username");
+        email= extras.getString("email");
+
     }
 
 

@@ -56,13 +56,13 @@ public class RegistroActivity extends AppCompatActivity {
                     }
                     else {
 
-                        Toast.makeText(getApplicationContext(),"Contraseñas no coinciden",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),getResources().getString(R.string.ToastPass),Toast.LENGTH_SHORT).show();
 
                     }
                 }
                 else {
 
-                    Toast.makeText(getApplicationContext(),"Por favor complete todos los campos",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),getResources().getString(R.string.ToastCampos),Toast.LENGTH_SHORT).show();
 
                 }
             }

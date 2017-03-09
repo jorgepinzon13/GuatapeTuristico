@@ -14,7 +14,13 @@
     <string name="miPerfil">My Profile</string>
     <string name="cerrarSesion">Log out</string>
     <string name="Principal">Main</string>
-    <string name="Pueblo">Guatapé...Pueblo de zócalos y colores</string>
+    <string name="Pueblo">Guatapé...Town of baseboards and colors</string>
+
+
+    <string name="ToastUser">User or Password incorrect</string>
+    <string name="ToastCampos">Please complete all the fields</string>
+    <string name="ToastErrorReg">Register error</string>
+    <string name="ToastPass">Passwords missmatch</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_hotel">HotelActivity</string>
