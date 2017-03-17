@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         bInicio=(Button) findViewById(R.id.bInicio);
         tReg=(TextView) findViewById(R.id.tReg);
 
-//        Bundle extras = getIntent().getExtras();
+       Bundle extras = getIntent().getExtras();
 
 
 
@@ -40,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     if (eUsuario.getText().toString().equals(username) && ePassword.getText().toString().equals(password)) {
 
-                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        Intent intent = new Intent(LoginActivity.this, MainDActivity.class);
                         intent.putExtra("username", username);
                         intent.putExtra("password", password);
                         intent.putExtra("email", email);

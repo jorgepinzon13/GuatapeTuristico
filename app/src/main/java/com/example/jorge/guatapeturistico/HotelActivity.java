@@ -62,8 +62,8 @@ public class HotelActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(mViewPager);
 
         Bundle extras = getIntent().getExtras();
-        username = extras.getString("username");
-        email = extras.getString("email");
+       // username = extras.getString("username");
+        //email = extras.getString("email");
 
     }
 

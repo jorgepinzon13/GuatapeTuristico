@@ -8,45 +8,67 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".MainActivity" />
-
         <activity android:name=".LoginActivity" />
-
         <activity android:name=".RegistroActivity" />
-
-
-        <activity android:name=".SplashActivity">
+        <activity android:name=".SplashActivity" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-
-
-
-
-
         <activity android:name=".PerfilActivity" />
-
         <activity
             android:name=".HotelActivity"
             android:label="@string/title_activity_hotel"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".BarActivity"
             android:label="@string/title_activity_bar"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".InteresActivity"
             android:label="@string/title_activity_interes"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TurismoActivity">
 
+        </activity>
+        <activity
+            android:name=".HotelDActivity"
+            android:label="@string/title_activity_hotel_d"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainDActivity"
+            android:label="@string/title_activity_main_d"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InteresDActivity"
+            android:label="@string/title_activity_interes_d"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BarDActivity"
+            android:label="@string/title_activity_bar_d"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rest1Activity"
+            android:label="@string/title_activity_rest1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rest2Activity"
+            android:label="@string/title_activity_rest2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rest3Activity"
+            android:label="@string/title_activity_rest3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RestDActivity"
+            android:label="@string/title_activity_rest_d"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

@@ -42,4 +42,23 @@
     <string name="Sitio1">Sitio de Interés 1</string>
     <string name="Sitio2">Sitio de Interés 2</string>
     <string name="Sitio3">Sitio de Interés 3</string>
+    <string name="desInteres1">Esta es la descripcion de la piedra</string>
+    <string name="precInteres1">15.000 COP</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_hotel_d">HotelDActivity</string>
+    <string name="title_activity_main_d">MainDActivity</string>
+    <string name="title_activity_interes_d">InteresDActivity</string>
+    <string name="title_activity_bar_d">BarDActivity</string>
+
+    <string name="rest1">Pizzería De Luiggi</string>
+    <string name="rest2">Café La Viña</string>
+    <string name="rest3">Thai Terrace</string>
+    <string name="title_activity_rest1">Rest1Activity</string>
+    <string name="title_activity_rest2">Rest2Activity</string>
+    <string name="title_activity_rest3">Rest3Activity</string>
+    <string name="Restaurantes">Restaurantes</string>
+    <string name="title_activity_rest_d">RestDActivity</string>
 </resources>
