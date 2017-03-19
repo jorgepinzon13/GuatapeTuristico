@@ -54,6 +54,23 @@ public class RestDActivity extends AppCompatActivity
 
         lista.setAdapter(adapter);
 
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        View hView = navigationView.getHeaderView(0);
+
+
+
+        eUsuarioD = (EditText) hView.findViewById(R.id.eUsuarioD);
+        eEmailD = (EditText) hView.findViewById(R.id.eEmailD);
+
+        Bundle extras = getIntent().getExtras();
+        eUsuarioD.setText(extras.getString("username"));
+        eEmailD.setText(extras.getString("email"));
+
+        username = extras.getString("username");
+        email = extras.getString("email");
+
+        navigationView.setNavigationItemSelectedListener(this);
+
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -63,24 +80,24 @@ public class RestDActivity extends AppCompatActivity
 
                     case 0:
                         intent = new Intent(RestDActivity.this, Rest1Activity.class);
-                        startActivity(intent);
                         intent.putExtra("username",username);
                         intent.putExtra("email",email);
+                        startActivity(intent);
                         finish();
                         break;
 
                     case 1:
                         intent = new Intent(RestDActivity.this, Rest2Activity.class);
-                        startActivity(intent);
                         intent.putExtra("username",username);
                         intent.putExtra("email",email);
+                        startActivity(intent);
                         finish();
                         break;
                     case 2:
                         intent = new Intent(RestDActivity.this, Rest3Activity.class);
-                        startActivity(intent);
                         intent.putExtra("username",username);
                         intent.putExtra("email",email);
+                        startActivity(intent);
                         finish();
                         break;
                     default:
@@ -99,22 +116,7 @@ public class RestDActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        View hView = navigationView.getHeaderView(0);
 
-
-
-        eUsuarioD = (EditText) hView.findViewById(R.id.eUsuarioD);
-        eEmailD = (EditText) hView.findViewById(R.id.eEmailD);
-
-        Bundle extras = getIntent().getExtras();
-        eUsuarioD.setText(extras.getString("username"));
-        eEmailD.setText(extras.getString("email"));
-
-        username = extras.getString("username");
-        email = extras.getString("email");
-
-        navigationView.setNavigationItemSelectedListener(this);
     }
 
     class Adapter extends ArrayAdapter<Lista_Entrada> {

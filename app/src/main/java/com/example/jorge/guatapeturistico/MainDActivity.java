@@ -37,7 +37,6 @@ public class MainDActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         View hView = navigationView.getHeaderView(0);
 
@@ -54,6 +53,7 @@ public class MainDActivity extends AppCompatActivity
         email = extras.getString("email");
 
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override

@@ -68,6 +68,8 @@ public class BarDActivity extends AppCompatActivity
         email = extras.getString("email");
 
         navigationView.setNavigationItemSelectedListener(this);
+
+
     }
 
     @Override

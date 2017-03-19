@@ -50,6 +50,7 @@ public class Rest1Activity extends AppCompatActivity
         eEmailD.setText(extras.getString("email"));
 
         username = extras.getString("username");
+
         email = extras.getString("email");
 
         navigationView.setNavigationItemSelectedListener(this);
